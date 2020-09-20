@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Image Filters</h1>
+  <canvas id="can1">
+    
+  </canvas>
+
+  <h2>Load Image</h2>
+  <p>
+    <input type="file" id="fInput" accept="image/*" multiple="false" onchange="loadImage()">
+  </p>
+
+  <h2>Apply Filter</h2>
+  <p>
+    <input type="button" value="Grayscale" onclick="doGray()">
+  </p>
+
+  <p>
+    <input type="button" value="Reset Image" onclick="doReset()">
+  </p>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <script src="filter.js"></script>
+</body>
+</html>
